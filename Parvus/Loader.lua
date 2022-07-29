@@ -22,12 +22,12 @@ end
 
 local function GetScript(Script)
     return Parvus.Debug and readfile("Parvus/" .. Script .. ".lua")
-    or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/" .. Script .. ".lua")
+    or game:HttpGetAsync("https://raw.githubusercontent.com/gsharemedia/Roblox/main/" .. Script .. ".lua")
 end
 
 local function LoadScript(Script)
     return loadstring(Parvus.Debug and readfile("Parvus/" .. Script .. ".lua")
-    or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/" .. Script .. ".lua"))()
+    or game:HttpGetAsync("https://raw.githubusercontent.com/gsharemedia/Roblox/main/" .. Script .. ".lua"))()
 end
 
 getgenv().Parvus = {
